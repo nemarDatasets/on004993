@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "WIRED ICM Sample Dataset - Workshop on Intracranial Recordings in Humans, Epilepsy, DBS",
+  "description": "A sample intracranial electrophysiology dataset collected during natural listening tasks, including evoked responses to movie trailers and speech stimuli (TIMIT corpus), along with examples of seizure activity and vagus nerve stimulator artifact. This tutorial dataset from the WIRED ICM course demonstrates clinical iEEG recordings from patients with epilepsy, providing illustrative examples of both neural responses to naturalistic audiovisual stimuli and common artifacts encountered in intracranial recordings.",
+  "methods_description": "Intracranial electrophysiological recordings were collected from patients during three listening tasks: movietrailers (Pixar, Disney, Dreamworks clips), timit4 (unique sentences from TIMIT corpus), and timit5 (10 repeated sentences from TIMIT corpus). Event markers indicate stimulus onset and offset. All procedures were approved by the University of Texas at Austin Institutional Review Board.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,62 +11,6 @@
     "Maansi Desai": {},
     "Alyssa Field": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds004993.v1.1.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on004993",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004993",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.21105/joss.01896",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "10.1038/s41597-019-0105-7",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "National Institutes of Health",
-      "award_number": "R01 DC018579",
-      "award_title": "National Institute on Deafness and Other Communication Disorders"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "ieeg",
-    "anat"
-  ],
-  "resource_type_specific": "iEEG Dataset",
-  "sizes": [
-    "30.8 MB (9 files)"
-  ],
-  "formats": [
-    ".curv",
-    ".edf",
-    ".fif",
-    ".gz",
-    ".json",
-    ".md",
-    ".pial",
-    ".png",
-    ".tsv"
-  ],
-  "description": "A sample intracranial electrophysiology dataset containing recordings from patients with epilepsy during natural listening tasks. The dataset includes evoked responses to movie trailers and speech stimuli (TIMIT corpus), along with examples of seizure-related activity and vagus nerve stimulator artifact. Designed as tutorial material for the WIRED ICM course, this dataset demonstrates clinical iEEG recording techniques and signal processing challenges in human neuroscience research.",
-  "methods_description": "Intracranial recordings were collected from patients implanted with electrode grids during three listening tasks: movietrailers (Pixar, Disney, and Dreamworks movie clips), timit4 (unique sentences from TIMIT corpus), and timit5 (repeated sentences from TIMIT corpus). Event markers indicate stimulus onset and offset. All procedures were approved by the University of Texas at Austin Institutional Review Board.",
   "keywords": [
     {
       "term": "intracranial electrophysiology"
@@ -92,5 +38,60 @@
       "term": "seizure activity"
     }
   ],
-  "source_hash": "55ef44e2a78e0573f7ba9ba144c0b481732bae6d1af7e6691c05b8ba220755e2"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on004993",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004993",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0105-7",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004993.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "National Institutes of Health",
+      "award_number": "R01 DC018579",
+      "award_title": "National Institute on Deafness and Other Communication Disorders"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
+  "modalities": [
+    "ieeg",
+    "anat"
+  ],
+  "sizes": [
+    "363.2 MB (28 files)"
+  ],
+  "formats": [
+    ".curv",
+    ".edf",
+    ".fif",
+    ".gz",
+    ".json",
+    ".md",
+    ".pial",
+    ".png",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "638d979668249b7a1789a0903ad4b5bbecc4b4dabf5e41b00429ea34195f4052"
 }
